@@ -6,7 +6,7 @@ class Blog(models.Model):
 	title = models.CharField(max_length = 255) 
 	pub_date = models.DateTimeField() # publication date 
 	body = models.TextField() # text of post 
-	image = models.ImageField(upload_to = 'images\\') 
+	image = models.ImageField(upload_to = 'images/') 
 	 
 	def summary(self):
 		# Returns only the first 100 characters of the blog post. 
